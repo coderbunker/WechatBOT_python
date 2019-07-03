@@ -1,24 +1,36 @@
-This is free and unencumbered software released into the public domain.
+# Setup
+This bot works with a python installed with a version of 3 or above
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+>python --version
+to check your python version
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+Clone the repository somewhere
 
-For more information, please refer to <http://unlicense.org>
+> npm itchat
+
+Install the itchat dependencies you need
+
+
+>itchat.auto_login(hotReload = True)
+
+This saves the record, user does not have to login each time
+
+# Commands
+add <item> (example: add pg 13 #15-18). This will add whatever you put into x into your own list. For the example provided it'll add "pg 13 #15-18" to your list
+
+remove <number> (example: remove 2). This will remove the second item in your list, the list is designed in a non-array fashion so it starts at 1, not 0.
+
+list. This will show your entire list including numbers.
+
+remindme XXhXXmXXs <message> (example: remindme 00h10m00s monkaS). This will send you a WeChat message after however much time you specified. For the example provided, it will send you a reminder with "monkaS" after 10 minutes
+
+# License
+free usage
+this project was made with the platform itchat:
+
+https://github.com/littlecodersh/ItChat/wiki/Tutorial1
+https://itchat.readthedocs.io/zh/latest/
+
+# project 
+
