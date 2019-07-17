@@ -155,7 +155,37 @@ def add_friend(msg):
 
 # V.	Combining Everything together:
 ## Features that this current bot provides:
-## 	Auto Accept and Send Files
+
+## 	1. Auto Accept and Send Files
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_1.jpg)
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_2.jpg)
+
+
+## 	2. Responding to certain key words such as #freelancer #client #other
+
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_3.jpg)
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_4.jpg)
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_5.jpg)
+
+We try to achiever this by splicing the word and extracting the last two or one word at the user wants to another user that they want to
+
+```python
+words = context.split(" ")
+file_name = words[0]
+receiving_name = words[-1]
+print(receiving_name)
+# this gives ricky.jpg after @
+receiving_friend= itchat.search_friends(name=receiving_name)
+
+if len(words)>1:
+    #for two word names
+        receiving_name_two = words[-2] + ' ' + words[-1]
+        print(receiving_name_two)
+        receiving_friend_two = itchat.search_friends(name=receiving_name_two)
+
+```
+
+
 
 
 
