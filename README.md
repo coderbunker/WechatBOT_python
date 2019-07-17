@@ -3,6 +3,7 @@
 
 OR PYTHON 3 HIGHER!
 
+# PLEASE NOTE THAT WECHAT ACCOUNT CREATED AFTER 2017 MAY FACE TROUBLE WHEN THE ACCOUNT IS USED TO LOG IN AS THE BOT. 
 # WechatBOT_python
 Using itchat platform (python)  for automation and auto reply of images, files etc
 
@@ -37,6 +38,7 @@ this saves the memory of the user that logged in. So that the same user doesn’
 
 # License
 free usage
+
 this project was made with the platform itchat:
 
 https://github.com/littlecodersh/ItChat/wiki/Tutorial1
