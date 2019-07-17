@@ -157,6 +157,9 @@ def add_friend(msg):
 ## Features that this current bot provides:
 
 ## 	1. Auto Accept and Send Files
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_1.png)
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_2.png)
+
 
 
 ## 	2. Responding to certain key words such as #freelancer #client #other
@@ -180,6 +183,9 @@ if len(words)>1:
         receiving_friend_two = itchat.search_friends(name=receiving_name_two)
 
 ```
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_3.png)
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_4.png)
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_5_new.png)
 
 
 
