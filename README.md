@@ -164,7 +164,9 @@ def add_friend(msg):
 
 ## 	2. Responding to certain key words such as #freelancer #client #other
 
+## 	3. Sending the file in the local drive to a user wanted
 
+![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_3.png)
 
 We try to achiever this by splicing the word and extracting the last two or one word at the user wants to another user that they want to
 
@@ -183,7 +185,7 @@ if len(words)>1:
         receiving_friend_two = itchat.search_friends(name=receiving_name_two)
 
 ```
-![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_3.png)
+
 ![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_4.png)
 ![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_5_new.png)
 
