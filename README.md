@@ -1,6 +1,7 @@
-[![Gitter][gitter-picture]][gitter] ![py27][py27] ![py35][py35] [English version][english-version]
+[![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
-[![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)](https://www.python.org/downloads/release/python-360/) [![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-360/)
+OR PYTHON 3 HIGHER!
 
 # WechatBOT_python
 Using itchat platform (python)  for automation and auto reply of images, files etc
@@ -56,19 +57,20 @@ def auto_reply(msg):
     context = msg.text
     friend = itchat.search_friends(name=coming_from)
     print(f'{coming_from}:{context}')
-
-isGroupChat=True allows it to only work when the message is sent from the group chat
 ```
+isGroupChat=True allows it to only work when the message is sent from the group chat
 
 ## II.	RETREIVE INFORMATION FROM THE TEXT SENT:
-```python
 Getting name of User that sends the message:
+```python
 msg.get('ActualNickName')
-
+```
 The content of the message
+```
 msg.text
+```
 
-
+```
 ex) 
 @itchat.msg_register(TEXT,isGroupChat=True)
 def auto_reply(msg):
@@ -76,14 +78,17 @@ def auto_reply(msg):
     context = msg.text
     friend = itchat.search_friends(name=coming_from)
     print(f'{coming_from}:{context}')
+```
+now we can print who it is coming from and the content of the message 
 
-# now we can print who it is coming from and the content
-# notice that we defined the
+
+```
 coming_from = msg.get('ActualNickName')
 coming_from to be the user that sent the message
 friend = itchat.search_friends(name=coming_from)
-friend to be defined as a variable storing the friend with the ‘coming_from’. As a result friend is storing the user that sent the message.
 ```
+notice that we defined the friend to be defined as a variable storing the friend with the ‘coming_from’. As a result friend is storing the user that sent the message.
+
 
 ## III.	Sending Media Files
 ### i)	Sending Files for general (all pdf, jpg etc)
@@ -93,9 +98,10 @@ itchat.send_file('File Path’, friend[0]['UserName'])
 
 
 friend[0]['UserName']
+```
 	This part defines who is receiving the file or the message
 
-
+```python
 Ex)
 
 Windows:
@@ -105,23 +111,30 @@ MAC:
 reply = itchat.send_file(
             '/Users/suser/Desktop/store_file/Coderbunker collaboration model with clients.pdf',
             friend[0]['UserName'])
-*the only reason why ‘\\’ is used to separate is because it is for the windows
+```
+
+the only reason why ‘\\’ is used to separate is because it is for the windows
 
 
 From the example above, friend = itchat.search_friends(name=coming_from)
+
 	Since friend is already pre-defined as the user that is sending the message, the file will be sent to the person that is sending a message to the bot
-```
+
 
 ### ii)	Sending Images Specifically
 This allows us to send whatever file the user asks for. For example, if user sends ‘ricky.jpg’ or ‘coderbunkerfile.pdf’ the code will look for the corresponding file in the folder and send that file
 
+
+
 ```python
 itchat.send_file('File Path'+ msg.text, friend[0]['UserName'])
-
+```
 
 by putting the msg.text after the 'File Path', the file path will be composed of the message content that someone sends at the end.
 
-For example, if someone sends the bot ‘ricky.jpg’, the file path will become 
+For example, if someone sends the bot ‘ricky.jpg’, the file path will become
+
+```
 'C:\\Users\\user\\Desktop\\CODER BUNKER INTERN \\workspace\\chatbot\\images\\’ + ricky.jpg
 
 Resulting:
@@ -136,11 +149,16 @@ def add_friend(msg):
     print(u'[ Terminal Info ] New Friend Request 新朋友的请求，自动通过验证添加加好友 From: %s' % msg['RecommendInfo']['UserName'])
     itchat.add_friend(**msg['Text']) # This automatically adds the friend
 
+```
+```
 ['RecommendInfo']['UserName']) 
+```
+
 This portion is the user you are sending the message to, so in this case a newly added user
 
 Ex)  This sends all the corresponding files when a new user is added, as well as auto-accepting it
 
+```
 @itchat.msg_register(FRIENDS)
 def add_friend(msg):
     print(u'[ Terminal Info ] New Friend Request 新朋友的请求，自动通过验证添加加好友 From: %s' % msg['RecommendInfo']['UserName'])
@@ -161,9 +179,6 @@ def add_friend(msg):
 ## 	1. Auto Accept and Send Files
 ![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_1.png)
 ![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_2.png)
-
-
-
 ## 	2. Responding to certain key words such as #freelancer #client #other
 
 ## 	3. Sending the file in the local drive to a user wanted
@@ -187,7 +202,6 @@ if len(words)>1:
         receiving_friend_two = itchat.search_friends(name=receiving_name_two)
 
 ```
-
 ![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_new_4.png)
 ![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_5_new.png)
 
