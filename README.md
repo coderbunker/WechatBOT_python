@@ -157,15 +157,11 @@ def add_friend(msg):
 ## Features that this current bot provides:
 
 ## 	1. Auto Accept and Send Files
-![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_1.jpg)
-![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_2.jpg)
 
 
 ## 	2. Responding to certain key words such as #freelancer #client #other
 
-![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_3.jpg)
-![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_4.jpg)
-![BANNER](https://raw.githubusercontent.com/coderbunker/WechatBOT_python/master/pic_demo/demo_5.jpg)
+
 
 We try to achiever this by splicing the word and extracting the last two or one word at the user wants to another user that they want to
 
