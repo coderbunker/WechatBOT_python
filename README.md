@@ -13,7 +13,9 @@ https://hub.docker.com/r/kdaye/itchat/dockerfile
 
 NOTE:
 add the below in dockerfile
+```
 && apk add xdg-utils
+```
 
 # WechatBOT_python
 Using itchat platform (python)  for automation and auto reply of images, files etc
