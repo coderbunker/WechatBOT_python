@@ -4,6 +4,13 @@
 OR PYTHON 3 HIGHER!
 
 ### PLEASE NOTE THAT WECHAT ACCOUNT CREATED AFTER 2017 MAY FACE TROUBLE WHEN THE ACCOUNT IS USED TO LOG IN AS THE BOT. 
+
+# Advanced: Dockerization 
+where to start:
+https://docs.docker.com/get-started/
+
+https://hub.docker.com/r/kdaye/itchat/dockerfile
+
 # WechatBOT_python
 Using itchat platform (python)  for automation and auto reply of images, files etc
 
