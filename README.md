@@ -7,6 +7,23 @@ OR PYTHON 3 HIGHER!
 # WechatBOT_python
 Using itchat platform (python)  for automation and auto reply of images, files etc
 
+# Some Alternative platform
+-Some explanation referred to itchat by littlecodersh
+
+[youfou/wxpy](https://github.com/youfou/wxpy): Good API plugin, wechatbot, personal API
+[liuwons/wxBot](https://github.com/liuwons/wxBot): A wechat robot similiar to the robot branch
+
+[zixia/wechaty](https://github.com/Chatie/wechaty): Wechat for bot in Javascript(ES6), Personal Account Robot Framework/Library
+>wechaty: tried project with this, good, but no complete suppport for image integration yet
+
+[sjdy521/Mojo-Weixin](https://github.com/sjdy521/Mojo-Weixin): Wechat web api in Perl, available with HTTP requests
+
+[yaphone/itchat4j](https://github.com/yaphone/itchat4j): Extend your wechat with java
+
+[HanSon/vbot](https://github.com/hanson/vbot): Based on PHP7，using anonymous function to create user-defined service
+
+[kanjielu/jeeves](https://github.com/kanjielu/jeeves): Use Springbot
+
 # Setup
 This bot works with a python installed with a version of 3 or above
 
