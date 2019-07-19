@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    itchat:
+     restart: always
+     image: itchat
+     volumes:
+      - ./src:/job
+     container_name: itchat
+     network_mode: bridge
