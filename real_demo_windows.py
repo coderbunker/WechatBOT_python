@@ -1,7 +1,7 @@
 import time, datetime, requests, itchat
 from itchat.content import *
 import logging
-itchat.auto_login(hotReload = True)
+itchat.auto_login(hotReload=True,enableCmdQR=2)
 
 #############################################################Try using  Content = input(msg.text)
 
