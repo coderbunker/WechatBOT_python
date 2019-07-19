@@ -8,6 +8,6 @@ RUN apk --update add --virtual build-dependencies libffi-dev openssl-dev gcc mus
   && pip install --upgrade pip \
   && pip install -r requirements.txt \
   && apk del build-dependencies \
-  && apk add xdg-utils
-  && apt-get w3m 
+  && apk add xdg-utils \
+  && apk add w3m 
 CMD ["python", "/job/real_demo.py"]
