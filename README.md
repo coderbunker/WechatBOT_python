@@ -12,10 +12,23 @@ https://docs.docker.com/get-started/
 https://hub.docker.com/r/kdaye/itchat/dockerfile
 
 NOTE:
-add the below in dockerfile
+MUST add the below in dockerfile
 ```
 && apk add xdg-utils
 ```
+```
+ && apk add w3m 
+```
+### Some possible references for [no method available for opening 'QR.png'.] or [xdg-open] error:
+
+https://stackoverflow.com/questions/54437534/docker-open-a-url-in-the-host-browser
+
+https://github.com/littlecodersh/ItChat/issues/599
+
+http://45.32.72.254/post/Itchat
+
+https://github.com/sfyc23/EverydayWechat/issues/52
+
 
 # WechatBOT_python
 Using itchat platform (python)  for automation and auto reply of images, files etc
